@@ -1,0 +1,136 @@
+{
+  "runs": {
+    "primary__P0": {
+      "config": {
+        "name": "primary",
+        "filter_raters": true,
+        "unsure": "drop"
+      },
+      "prompt": "P0",
+      "judges": [
+        "Qwen/Qwen2.5-0.5B-Instruct",
+        "Qwen/Qwen2.5-1.5B-Instruct",
+        "HuggingFaceTB/SmolLM2-1.7B-Instruct"
+      ],
+      "scope": "all conversations",
+      "n_conversations": {
+        "DICES-350": 350,
+        "DICES-990": 990
+      },
+      "constant_value": {
+        "350": 0.2620447133530821,
+        "990": 0.35519891321186847
+      },
+      "missing_judges": {
+        "350": [],
+        "990": []
+      }
+    },
+    "sens_unsure_half__P0": {
+      "config": {
+        "name": "sens_unsure_half",
+        "filter_raters": true,
+        "unsure": "half"
+      },
+      "prompt": "P0",
+      "judges": [
+        "Qwen/Qwen2.5-0.5B-Instruct",
+        "Qwen/Qwen2.5-1.5B-Instruct",
+        "HuggingFaceTB/SmolLM2-1.7B-Instruct"
+      ],
+      "scope": "all conversations",
+      "n_conversations": {
+        "DICES-350": 350,
+        "DICES-990": 990
+      },
+      "constant_value": {
+        "350": 0.2709826350405523,
+        "990": 0.3621840659340659
+      },
+      "missing_judges": {
+        "350": [],
+        "990": []
+      }
+    },
+    "sens_all_raters__P0": {
+      "config": {
+        "name": "sens_all_raters",
+        "filter_raters": false,
+        "unsure": "drop"
+      },
+      "prompt": "P0",
+      "judges": [
+        "Qwen/Qwen2.5-0.5B-Instruct",
+        "Qwen/Qwen2.5-1.5B-Instruct",
+        "HuggingFaceTB/SmolLM2-1.7B-Instruct"
+      ],
+      "scope": "all conversations",
+      "n_conversations": {
+        "DICES-350": 350,
+        "DICES-990": 990
+      },
+      "constant_value": {
+        "350": 0.2859180100389728,
+        "990": 0.35026336230652744
+      },
+      "missing_judges": {
+        "350": [],
+        "990": []
+      }
+    },
+    "primary__P1": {
+      "config": {
+        "name": "primary",
+        "filter_raters": true,
+        "unsure": "drop"
+      },
+      "prompt": "P1",
+      "judges": [
+        "Qwen/Qwen2.5-1.5B-Instruct"
+      ],
+      "scope": "all conversations",
+      "n_conversations": {
+        "DICES-350": 350,
+        "DICES-990": 990
+      },
+      "constant_value": {
+        "350": 0.2620447133530821,
+        "990": 0.35519891321186847
+      },
+      "missing_judges": {
+        "350": [],
+        "990": []
+      }
+    },
+    "primary__P2": {
+      "config": {
+        "name": "primary",
+        "filter_raters": true,
+        "unsure": "drop"
+      },
+      "prompt": "P2",
+      "judges": [
+        "Qwen/Qwen2.5-1.5B-Instruct"
+      ],
+      "scope": "all conversations",
+      "n_conversations": {
+        "DICES-350": 350,
+        "DICES-990": 990
+      },
+      "constant_value": {
+        "350": 0.2620447133530821,
+        "990": 0.35519891321186847
+      },
+      "missing_judges": {
+        "350": [],
+        "990": []
+      }
+    }
+  },
+  "settings": {
+    "n_boot": 2000,
+    "n_perm": 10000,
+    "n_null": 1000,
+    "seed": 20261027
+  }
+}
