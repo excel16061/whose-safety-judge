@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wsj"
+version = "0.1.0"
+description = "Whose safety does an LLM judge reflect? Small LLM judges vs DICES rater distributions."
+requires-python = ">=3.10"
+dependencies = []  # see requirements.txt (exact pins)
+
+[project.scripts]
+wsj = "wsj.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: needs a downloaded Hugging Face model (skipped if not cached)"]
