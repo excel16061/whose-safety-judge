@@ -3,8 +3,7 @@
 Every problem hit during the project: what happened, the cause, how it was
 fixed, and the effect on the results. The facts come from `results/logs/`,
 `results/run_log.jsonl`, the git history, the README's "Deviations from
-plan" and the run history kept while the project was done. Times are IST
-(UTC+5:30). A dated timeline is in `project_log.md`.
+plan" and the run history kept while the project was done. Times are PST. A dated timeline is in `project_log.md`.
 
 The short version: **none of these problems changed a reported number**,
 except the README and docs claims that were wrong and were corrected. The two
