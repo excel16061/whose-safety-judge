@@ -5,9 +5,15 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "wsj"
 version = "0.1.0"
+authors = [{name = "Syed Omer Ali"}]
+maintainers = [{name = "Syed Omer Ali"}]
 description = "Whose safety does an LLM judge reflect? Small LLM judges vs DICES rater distributions."
 requires-python = ">=3.10"
 dependencies = []  # see requirements.txt (exact pins)
+
+[project.urls]
+Repository = "https://github.com/excel16061/whose-safety-judge"
+Issues = "https://github.com/excel16061/whose-safety-judge/issues"
 
 [project.scripts]
 wsj = "wsj.cli:main"

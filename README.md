@@ -1,5 +1,9 @@
 # Whose safety does an LLM judge reflect?
 
+**Author and maintainer:** Syed Omer Ali
+
+**Repository:** https://github.com/excel16061/whose-safety-judge
+
 LLMs are increasingly used as *judges* that decide whether a chatbot response
 is safe. But people disagree about what is unsafe, and the disagreement
 sometimes follows demographic lines. This project asks whether small open
